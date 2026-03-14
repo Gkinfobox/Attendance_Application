@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/bg_light">
+
+    <FrameLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="24dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_splash_ring" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="S"
+            android:textColor="@color/red"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STUDENT"
+        android:textColor="@color/red"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ATTENDANCE"
+        android:textColor="@color/red"
+        android:textSize="13sp"
+        android:letterSpacing="0.15"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendance Portal"
+        android:textColor="@color/muted_light"
+        android:textSize="13sp"
+        android:letterSpacing="0.1"
+        android:textAllCaps="true"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+        <View android:layout_width="8dp" android:layout_height="8dp"
+            android:background="@color/red" android:layout_margin="4dp"
+            android:id="@+id/dot1"/>
+        <View android:layout_width="8dp" android:layout_height="8dp"
+            android:background="@color/border_light" android:layout_margin="4dp"
+            android:id="@+id/dot2"/>
+        <View android:layout_width="8dp" android:layout_height="8dp"
+            android:background="@color/border_light" android:layout_margin="4dp"
+            android:id="@+id/dot3"/>
+    </LinearLayout>
+
+</LinearLayout>

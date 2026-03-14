@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light">
+
+    <!-- LOGIN SCREEN -->
+    <ScrollView
+        android:id="@+id/screen_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp"
+            android:minHeight="600dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="STUDENT ATTENDANCE" android:textColor="@color/red"
+                android:textSize="22sp" android:textStyle="bold" android:letterSpacing="0.1"
+                android:layout_marginBottom="4dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Student Portal" android:textColor="@color/muted_light"
+                android:textSize="11sp" android:textAllCaps="true" android:letterSpacing="0.1"
+                android:layout_marginBottom="28dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Welcome Back" android:textColor="@color/text_light"
+                android:textSize="22sp" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Sign in with your credentials" android:textColor="@color/muted_light"
+                android:textSize="13sp" android:layout_marginBottom="24dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="EMPLOYEE ID" android:textColor="@color/muted_light"
+                android:textSize="11sp" android:textAllCaps="true" android:letterSpacing="0.1"
+                android:textStyle="bold" android:layout_marginBottom="6dp"/>
+            <EditText android:id="@+id/et_empid"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="e.g. REG001" android:inputType="text"
+                android:background="@drawable/bg_card" android:padding="14dp"
+                android:textColor="@color/text_light" android:textColorHint="@color/muted_light"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="PASSWORD" android:textColor="@color/muted_light"
+                android:textSize="11sp" android:textAllCaps="true" android:letterSpacing="0.1"
+                android:textStyle="bold" android:layout_marginBottom="6dp"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:id="@+id/et_pwd"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:hint="Enter your password" android:inputType="textPassword"
+                    android:background="@drawable/bg_card" android:padding="14dp"
+                    android:paddingEnd="48dp"
+                    android:textColor="@color/text_light" android:textColorHint="@color/muted_light"/>
+                <ImageButton android:id="@+id/btn_eye_login"
+                    android:layout_width="40dp" android:layout_height="40dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:src="@android:drawable/ic_menu_view"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:tint="@color/muted_light"/>
+            </FrameLayout>
+
+            <TextView android:id="@+id/tv_forgot"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Forgot Password?" android:textColor="@color/red"
+                android:textSize="12sp" android:textStyle="bold"
+                android:gravity="end" android:layout_marginTop="6dp" android:layout_marginBottom="20dp"/>
+
+            <Button android:id="@+id/btn_login"
+                android:layout_width="match_parent" android:layout_height="56dp"
+                android:text="Login" android:background="@drawable/bg_btn_red"
+                android:textColor="@color/white" android:textSize="17sp" android:textStyle="bold"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- FORGOT PASSWORD SCREEN -->
+    <ScrollView
+        android:id="@+id/screen_fp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="24dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="STUDENT ATTENDANCE" android:textColor="@color/red"
+                android:textSize="22sp" android:textStyle="bold" android:letterSpacing="0.1"
+                android:layout_marginBottom="4dp" android:layout_marginTop="24dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Password Reset" android:textColor="@color/muted_light"
+                android:textSize="11sp" android:textAllCaps="true" android:letterSpacing="0.1"
+                android:layout_marginBottom="28dp"/>
+
+            <!-- Step 1: Enter EmpID -->
+            <LinearLayout android:id="@+id/fp_step1"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Forgot Password?" android:textColor="@color/text_light"
+                    android:textSize="22sp" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Enter your Register Number. OTP will be sent to teacher."
+                    android:textColor="@color/muted_light" android:textSize="13sp" android:layout_marginBottom="24dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="EMPLOYEE ID" android:textColor="@color/muted_light"
+                    android:textSize="11sp" android:textAllCaps="true" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+                <EditText android:id="@+id/et_fp_eid"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:hint="e.g. REG001" android:inputType="text"
+                    android:background="@drawable/bg_card" android:padding="14dp"
+                    android:textColor="@color/text_light" android:textColorHint="@color/muted_light"
+                    android:layout_marginBottom="20dp"/>
+                <Button android:id="@+id/btn_send_otp"
+                    android:layout_width="match_parent" android:layout_height="56dp"
+                    android:text="Send OTP" android:background="@drawable/bg_btn_red"
+                    android:textColor="@color/white" android:textStyle="bold" android:layout_marginBottom="16dp"/>
+                <Button android:id="@+id/btn_back_login"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="← Back to Login" android:background="?attr/selectableItemBackground"
+                    android:textColor="@color/red" android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Step 2: Enter OTP -->
+            <LinearLayout android:id="@+id/fp_step2"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:visibility="gone">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Enter OTP" android:textColor="@color/text_light"
+                    android:textSize="22sp" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="OTP sent to teacher. Ask your admin for the code."
+                    android:textColor="@color/muted_light" android:textSize="13sp" android:layout_marginBottom="16dp"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal" android:gravity="center"
+                    android:background="@drawable/bg_card" android:padding="8dp"
+                    android:layout_marginBottom="20dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="⏱" android:textSize="16sp" android:layout_marginEnd="4dp"/>
+                    <TextView android:id="@+id/tv_fp_timer"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="10:00" android:textColor="@color/red"
+                        android:textSize="16sp" android:textStyle="bold" android:layout_marginEnd="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="remaining" android:textColor="@color/muted_light" android:textSize="12sp"/>
+                </LinearLayout>
+                <EditText android:id="@+id/et_fp_otp"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:hint="Enter OTP" android:inputType="number"
+                    android:background="@drawable/bg_card" android:padding="14dp"
+                    android:textColor="@color/text_light" android:textColorHint="@color/muted_light"
+                    android:textSize="22sp" android:gravity="center" android:letterSpacing="0.3"
+                    android:layout_marginBottom="16dp"/>
+                <Button android:id="@+id/btn_verify_otp"
+                    android:layout_width="match_parent" android:layout_height="56dp"
+                    android:text="Verify OTP" android:background="@drawable/bg_btn_red"
+                    android:textColor="@color/white" android:textStyle="bold" android:layout_marginBottom="10dp"/>
+                <Button android:id="@+id/btn_resend_otp"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Resend OTP" android:background="@drawable/bg_card"
+                    android:textColor="@color/text_light" android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Step 3: New Password -->
+            <LinearLayout android:id="@+id/fp_step3"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:visibility="gone">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="New Password" android:textColor="@color/text_light"
+                    android:textSize="22sp" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Set your new password"
+                    android:textColor="@color/muted_light" android:textSize="13sp" android:layout_marginBottom="20dp"/>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp">
+                    <EditText android:id="@+id/et_fp_np"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:hint="New password" android:inputType="textPassword"
+                        android:background="@drawable/bg_card" android:padding="14dp" android:paddingEnd="48dp"
+                        android:textColor="@color/text_light" android:textColorHint="@color/muted_light"/>
+                    <ImageButton android:id="@+id/btn_eye_np"
+                        android:layout_width="40dp" android:layout_height="40dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:src="@android:drawable/ic_menu_view"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:tint="@color/muted_light"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+                    <EditText android:id="@+id/et_fp_cp"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:hint="Confirm password" android:inputType="textPassword"
+                        android:background="@drawable/bg_card" android:padding="14dp" android:paddingEnd="48dp"
+                        android:textColor="@color/text_light" android:textColorHint="@color/muted_light"/>
+                    <ImageButton android:id="@+id/btn_eye_cp"
+                        android:layout_width="40dp" android:layout_height="40dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:src="@android:drawable/ic_menu_view"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:tint="@color/muted_light"/>
+                </FrameLayout>
+                <Button android:id="@+id/btn_reset_pwd"
+                    android:layout_width="match_parent" android:layout_height="56dp"
+                    android:text="Change Password" android:background="@drawable/bg_btn_red"
+                    android:textColor="@color/white" android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Step 4: Success -->
+            <LinearLayout android:id="@+id/fp_step4"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:gravity="center"
+                android:visibility="gone" android:padding="20dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🎉" android:textSize="64sp" android:layout_marginBottom="16dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Password Changed!" android:textColor="@color/text_light"
+                    android:textSize="22sp" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Your password has been updated."
+                    android:textColor="@color/muted_light" android:textSize="13sp" android:layout_marginBottom="24dp"/>
+                <Button android:id="@+id/btn_go_login"
+                    android:layout_width="match_parent" android:layout_height="56dp"
+                    android:text="Go to Login" android:background="@drawable/bg_btn_red"
+                    android:textColor="@color/white" android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- LOADER -->
+    <FrameLayout android:id="@+id/loader"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="#B3F4F6FB" android:visibility="gone"
+        android:clickable="true" android:focusable="true">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center" android:orientation="vertical" android:gravity="center" android:padding="16dp">
+            <ProgressBar android:layout_width="44dp" android:layout_height="44dp"
+                android:indeterminateTint="@color/red"/>
+            <TextView android:id="@+id/tv_loader_msg"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Loading..." android:textColor="@color/muted_light"
+                android:textSize="14sp" android:layout_marginTop="14dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

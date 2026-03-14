@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand -->
+    <color name="red">#E63946</color>
+    <color name="red2">#C1121F</color>
+    <color name="red_dark">#C1121F</color>
+    <color name="red_light">#40E63946</color>
+    <color name="success">#06D6A0</color>
+    <color name="success_light">#1F06D6A0</color>
+    <color name="warning">#FFB703</color>
+    <color name="orange">#FF6B35</color>
+
+    <!-- Light theme -->
+    <color name="bg_light">#F4F6FB</color>
+    <color name="card_light">#FFFFFF</color>
+    <color name="card2_light">#EEF1F8</color>
+    <color name="border_light">#17000000</color>
+    <color name="text_light">#1A2235</color>
+    <color name="muted_light">#6B7A99</color>
+
+    <!-- Dark theme -->
+    <color name="bg_dark">#0D1B2A</color>
+    <color name="card_dark">#112236</color>
+    <color name="card2_dark">#1A3048</color>
+    <color name="border_dark">#14FFFFFF</color>
+    <color name="text_dark">#E8EDF5</color>
+    <color name="muted_dark">#7A9BB5</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+</resources>

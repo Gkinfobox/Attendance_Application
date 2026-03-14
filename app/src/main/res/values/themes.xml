@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.StudentAttendance" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryVariant">@color/red_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/red</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/red</item>
+        <item name="android:windowBackground">@color/bg_light</item>
+    </style>
+
+    <style name="Theme.StudentAttendance.Splash" parent="Theme.StudentAttendance">
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:statusBarColor">@color/bg_light</item>
+    </style>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Student Attendance</string>
+    <string name="app_brand">STUDENT</string>
+    <string name="app_sub">ATTENDANCE</string>
+    <string name="portal_label">Attendance Portal</string>
+    <string name="employee_portal">Student Portal</string>
+
+    <!-- Auth -->
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in_desc">Sign in with your credentials</string>
+    <string name="employee_id">Register Number</string>
+    <string name="emp_id_hint">e.g. REG001</string>
+    <string name="password">Password</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="back_to_login">← Back to Login</string>
+
+    <!-- Forgot Password -->
+    <string name="fp_title">Forgot Password?</string>
+    <string name="fp_desc">Enter your Register Number. OTP will be sent to teacher.</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="otp_desc">OTP sent to teacher. Ask your teacher for the code.</string>
+    <string name="six_digit_otp">6-Digit OTP</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="password_changed">Password Changed!</string>
+    <string name="password_changed_desc">Your password has been updated.</string>
+    <string name="go_to_login">Go to Login</string>
+    <string name="fp_new_password">Set your new password</string>
+    <string name="new_password_hint">New password</string>
+    <string name="confirm_password_hint">Confirm password</string>
+    <string name="remaining">remaining</string>
+    <string name="otp_hint">Enter OTP</string>
+    <string name="password_reset">Password Reset</string>
+
+    <!-- Home -->
+    <string name="logout">Logout</string>
+    <string name="today_status">Today\'s Status</string>
+    <string name="not_checked_in">Not Checked In</string>
+    <string name="tap_attend">Tap Attend to check in</string>
+    <string name="checked_in">✅ Present</string>
+    <string name="checked_out">🚪 Checked Out</string>
+    <string name="recent_activity">Recent Activity</string>
+    <string name="no_activity">No recent activity</string>
+
+    <!-- Attendance -->
+    <string name="mark_attendance">Mark Attendance</string>
+    <string name="check_in">✅ Check In</string>
+    <string name="check_out">🚪 Check Out</string>
+    <string name="department">Department</string>
+    <string name="location_not_captured">Location not captured</string>
+    <string name="get_location">Get Location</string>
+    <string name="check_in_now">✅ Check In Now</string>
+    <string name="check_out_now">🚪 Check Out Now</string>
+
+    <!-- Summary -->
+    <string name="my_summary">My Summary</string>
+    <string name="check_ins">Present</string>
+    <string name="check_outs">Absent</string>
+    <string name="filter_all">All</string>
+    <string name="no_records">No records found</string>
+    <string name="loading">Loading...</string>
+
+    <!-- Teacher -->
+    <string name="teacher_panel">Teacher Panel</string>
+    <string name="teacher_desc">Manage students and attendance</string>
+    <string name="total_students">Total Students</string>
+    <string name="today_present">Today Present</string>
+    <string name="today_absent">Today Absent</string>
+    <string name="attendance_summary">Attendance Summary</string>
+    <string name="students">Students</string>
+    <string name="add_student">➕ Add Student</string>
+    <string name="mark_absent">❌ Mark Absent (Auto)</string>
+    <string name="apply_filter">Apply Filter</string>
+    <string name="clear_filter">Clear</string>
+    <string name="all_students">All Students</string>
+    <string name="full_name">Full Name</string>
+    <string name="full_name_hint">Full name</string>
+    <string name="register_number">Register Number</string>
+    <string name="class_section">Class / Section</string>
+    <string name="mobile">Parent Mobile</string>
+    <string name="mobile_hint">Parent mobile number</string>
+    <string name="email">Email</string>
+    <string name="email_hint">Email address</string>
+    <string name="set_password">Set password</string>
+    <string name="select_department">Select department</string>
+    <string name="cancel">Cancel</string>
+    <string name="remove">🗑 Remove</string>
+
+    <!-- Nav -->
+    <string name="nav_home">Home</string>
+    <string name="nav_attend">Attend</string>
+    <string name="nav_summary">Summary</string>
+    <string name="nav_admin">Teacher</string>
+</resources>

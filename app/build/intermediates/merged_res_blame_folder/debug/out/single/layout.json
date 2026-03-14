@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "com.student.attendance.app-mergeDebugResources-33:/layout/activity_splash.xml",
+        "source": "com.student.attendance.app-main-36:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-mergeDebugResources-33:/layout/dialog_add_student.xml",
+        "source": "com.student.attendance.app-main-36:/layout/dialog_add_student.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-mergeDebugResources-33:/layout/activity_auth.xml",
+        "source": "com.student.attendance.app-main-36:/layout/activity_auth.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-mergeDebugResources-33:/layout/item_employee.xml",
+        "source": "com.student.attendance.app-main-36:/layout/item_employee.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-mergeDebugResources-33:/layout/fragment_home.xml",
+        "source": "com.student.attendance.app-main-36:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-mergeDebugResources-33:/layout/fragment_attendance.xml",
+        "source": "com.student.attendance.app-main-36:/layout/fragment_attendance.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-mergeDebugResources-33:/layout/item_log.xml",
+        "source": "com.student.attendance.app-main-36:/layout/item_log.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-mergeDebugResources-33:/layout/fragment_summary.xml",
+        "source": "com.student.attendance.app-main-36:/layout/fragment_summary.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-mergeDebugResources-33:/layout/fragment_teacher.xml",
+        "source": "com.student.attendance.app-main-36:/layout/fragment_teacher.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-mergeDebugResources-33:/layout/activity_main.xml",
+        "source": "com.student.attendance.app-main-36:/layout/activity_main.xml"
+    }
+]

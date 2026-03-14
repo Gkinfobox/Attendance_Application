@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_red" android:padding="20dp" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Teacher Panel" android:textColor="@color/white"
+                    android:textSize="22sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Manage students and attendance" android:textColor="#B3FFFFFF"
+                    android:textSize="12sp" android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+
+                <!-- Stats row: Total / Present Today / Absent Today -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="20dp">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:background="@drawable/bg_card"
+                        android:orientation="vertical" android:gravity="center" android:padding="14dp"
+                        android:layout_marginEnd="5dp">
+                        <TextView android:id="@+id/tv_adm_total"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="0" android:textColor="@color/red" android:textSize="26sp" android:textStyle="bold"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="TOTAL" android:textColor="@color/muted_light"
+                            android:textSize="10sp" android:textAllCaps="true"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:background="@drawable/bg_card"
+                        android:orientation="vertical" android:gravity="center" android:padding="14dp"
+                        android:layout_marginEnd="5dp" android:layout_marginStart="5dp">
+                        <TextView android:id="@+id/tv_adm_today"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="0" android:textColor="@color/success" android:textSize="26sp" android:textStyle="bold"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="PRESENT" android:textColor="@color/muted_light"
+                            android:textSize="10sp" android:textAllCaps="true"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:background="@drawable/bg_card"
+                        android:orientation="vertical" android:gravity="center" android:padding="14dp"
+                        android:layout_marginStart="5dp">
+                        <TextView android:id="@+id/tv_adm_absent"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="0" android:textColor="@color/muted_light" android:textSize="26sp" android:textStyle="bold"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="ABSENT" android:textColor="@color/muted_light"
+                            android:textSize="10sp" android:textAllCaps="true"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Tabs -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card" android:padding="4dp"
+                    android:orientation="horizontal" android:layout_marginBottom="20dp">
+                    <Button android:id="@+id/btn_adm_tab_sum"
+                        android:layout_width="0dp" android:layout_height="44dp"
+                        android:layout_weight="1" android:text="Attendance"
+                        android:textSize="13sp" android:textStyle="bold"
+                        android:background="@drawable/bg_btn_red" android:textColor="@color/white"/>
+                    <Button android:id="@+id/btn_adm_tab_emp"
+                        android:layout_width="0dp" android:layout_height="44dp"
+                        android:layout_weight="1" android:text="Students"
+                        android:textSize="13sp" android:textStyle="bold"
+                        android:background="@android:color/transparent" android:textColor="@color/muted_light"/>
+                </LinearLayout>
+
+                <!-- Attendance Panel -->
+                <LinearLayout android:id="@+id/panel_sum"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Mark Absent Button -->
+                    <Button android:id="@+id/btn_mark_absent"
+                        android:layout_width="match_parent" android:layout_height="52dp"
+                        android:text="❌ Mark Absent (Auto)"
+                        android:background="@drawable/bg_card" android:textColor="@color/text_light"
+                        android:textStyle="bold" android:layout_marginBottom="16dp"/>
+
+                    <!-- Filters -->
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="FILTER BY STUDENT"
+                        android:textColor="@color/muted_light" android:textSize="11sp"
+                        android:textAllCaps="true" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+                    <Spinner android:id="@+id/spin_emp"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:background="@drawable/bg_card" android:padding="4dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="FILTER BY CLASS"
+                        android:textColor="@color/muted_light" android:textSize="11sp"
+                        android:textAllCaps="true" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+                    <Spinner android:id="@+id/spin_class_filter"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:background="@drawable/bg_card" android:padding="4dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="FILTER BY STATUS"
+                        android:textColor="@color/muted_light" android:textSize="11sp"
+                        android:textAllCaps="true" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+                    <Spinner android:id="@+id/spin_type"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:background="@drawable/bg_card" android:padding="4dp"
+                        android:entries="@array/filter_types_teacher"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="FILTER BY DATE"
+                        android:textColor="@color/muted_light" android:textSize="11sp"
+                        android:textAllCaps="true" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+                    <Button android:id="@+id/btn_pick_date"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Select Date" android:textColor="@color/text_light"
+                        android:background="@drawable/bg_card" android:textStyle="bold"
+                        android:layout_marginBottom="10dp"/>
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_marginBottom="16dp">
+                        <Button android:id="@+id/btn_apply_filter"
+                            android:layout_width="0dp" android:layout_height="44dp"
+                            android:layout_weight="1" android:text="Apply Filter"
+                            android:background="@drawable/bg_btn_red" android:textColor="@color/white"
+                            android:textStyle="bold" android:layout_marginEnd="8dp"/>
+                        <Button android:id="@+id/btn_clear_filter"
+                            android:layout_width="wrap_content" android:layout_height="44dp"
+                            android:text="Clear" android:background="@drawable/bg_card"
+                            android:textColor="@color/text_light" android:textStyle="bold"
+                            android:paddingStart="16dp" android:paddingEnd="16dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/adm_log_list"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical"/>
+                </LinearLayout>
+
+                <!-- Students Panel -->
+                <LinearLayout android:id="@+id/panel_emp"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:visibility="gone">
+
+                    <Button android:id="@+id/btn_add_emp"
+                        android:layout_width="match_parent" android:layout_height="52dp"
+                        android:text="➕ Add Student"
+                        android:background="@drawable/bg_btn_red" android:textColor="@color/white"
+                        android:textStyle="bold" android:layout_marginBottom="16dp"/>
+
+                    <LinearLayout android:id="@+id/adm_emp_list"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- LOADER -->
+    <FrameLayout android:id="@+id/loader"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="#B3F4F6FB" android:visibility="gone"
+        android:clickable="true" android:focusable="true">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center" android:orientation="vertical" android:gravity="center">
+            <ProgressBar android:layout_width="44dp" android:layout_height="44dp"
+                android:indeterminateTint="@color/red"/>
+            <TextView android:id="@+id/tv_loader_msg"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Loading..." android:textColor="@color/muted_light"
+                android:textSize="14sp" android:layout_marginTop="14dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

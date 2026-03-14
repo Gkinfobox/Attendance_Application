@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Topbar -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+                android:orientation="horizontal" android:gravity="center_vertical"
+                android:paddingStart="16dp" android:paddingEnd="16dp"
+                android:background="@color/bg_light">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="STUDENT" android:textColor="@color/red"
+                    android:textSize="20sp" android:textStyle="bold" android:letterSpacing="0.1"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+
+                <!-- Absent Warning Banner -->
+                <TextView android:id="@+id/tv_absent_warning"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="⚠️ Past 9:30 AM — you may be marked absent if not checked in"
+                    android:textColor="@color/white" android:textSize="13sp"
+                    android:background="@color/red" android:padding="12dp"
+                    android:visibility="gone" android:layout_marginBottom="12dp"/>
+
+                <!-- Title -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Mark Attendance" android:textColor="@color/text_light"
+                    android:textSize="22sp" android:textStyle="bold" android:layout_marginBottom="20dp"/>
+
+                <!-- Toggle Tabs -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card" android:padding="4dp"
+                    android:orientation="horizontal" android:layout_marginBottom="20dp">
+                    <Button android:id="@+id/btn_tab_ci"
+                        android:layout_width="0dp" android:layout_height="44dp"
+                        android:layout_weight="1" android:text="✅ Check In"
+                        android:textSize="13sp" android:textStyle="bold"
+                        android:background="@drawable/bg_btn_red" android:textColor="@color/white"/>
+                    <Button android:id="@+id/btn_tab_co"
+                        android:layout_width="0dp" android:layout_height="44dp"
+                        android:layout_weight="1" android:text="🚪 Check Out"
+                        android:textSize="13sp" android:textStyle="bold"
+                        android:background="@android:color/transparent" android:textColor="@color/muted_light"/>
+                </LinearLayout>
+
+                <!-- CHECK IN FORM -->
+                <LinearLayout android:id="@+id/form_ci"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="EMPLOYEE ID" android:textColor="@color/muted_light"
+                        android:textSize="11sp" android:textAllCaps="true" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+                    <TextView android:id="@+id/tv_ci_empid"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:background="@drawable/bg_card" android:padding="14dp"
+                        android:textColor="@color/text_light" android:alpha="0.65"
+                        android:layout_marginBottom="16dp"/>
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="NAME" android:textColor="@color/muted_light"
+                        android:textSize="11sp" android:textAllCaps="true" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+                    <TextView android:id="@+id/tv_ci_name"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:background="@drawable/bg_card" android:padding="14dp"
+                        android:textColor="@color/text_light" android:alpha="0.65"
+                        android:layout_marginBottom="16dp"/>
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="DEPARTMENT" android:textColor="@color/muted_light"
+                        android:textSize="11sp" android:textAllCaps="true" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+                    <TextView android:id="@+id/tv_ci_dept"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:background="@drawable/bg_card" android:padding="14dp"
+                        android:textColor="@color/text_light" android:alpha="0.65"
+                        android:layout_marginBottom="16dp"/>
+
+                    <!-- Location -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:background="@drawable/bg_loc_box" android:padding="14dp"
+                        android:orientation="horizontal" android:gravity="center_vertical"
+                        android:layout_marginBottom="20dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="📍" android:textSize="22sp" android:layout_marginEnd="12dp"/>
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:id="@+id/tv_loc_status_ci"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Location not captured" android:textColor="@color/muted_light" android:textSize="12sp"/>
+                            <TextView android:id="@+id/tv_loc_coords_ci"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="—" android:textColor="@color/red" android:textSize="11sp"/>
+                        </LinearLayout>
+                        <Button android:id="@+id/btn_get_loc_ci"
+                            android:layout_width="wrap_content" android:layout_height="32dp"
+                            android:text="Get Location" android:textSize="12sp" android:textStyle="bold"
+                            android:textColor="@color/red" android:backgroundTint="#1AE63946"
+                            android:paddingStart="12dp" android:paddingEnd="12dp"/>
+                    </LinearLayout>
+
+                    <Button android:id="@+id/btn_checkin"
+                        android:layout_width="match_parent" android:layout_height="56dp"
+                        android:text="✅ Check In Now" android:backgroundTint="@color/success"
+                        android:textColor="@color/white" android:textSize="17sp" android:textStyle="bold"/>
+                </LinearLayout>
+
+                <!-- CHECK OUT FORM -->
+                <LinearLayout android:id="@+id/form_co"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:visibility="gone">
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="EMPLOYEE ID" android:textColor="@color/muted_light"
+                        android:textSize="11sp" android:textAllCaps="true" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+                    <TextView android:id="@+id/tv_co_empid"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:background="@drawable/bg_card" android:padding="14dp"
+                        android:textColor="@color/text_light" android:alpha="0.65"
+                        android:layout_marginBottom="16dp"/>
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="NAME" android:textColor="@color/muted_light"
+                        android:textSize="11sp" android:textAllCaps="true" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+                    <TextView android:id="@+id/tv_co_name"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:background="@drawable/bg_card" android:padding="14dp"
+                        android:textColor="@color/text_light" android:alpha="0.65"
+                        android:layout_marginBottom="16dp"/>
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="DEPARTMENT" android:textColor="@color/muted_light"
+                        android:textSize="11sp" android:textAllCaps="true" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+                    <TextView android:id="@+id/tv_co_dept"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:background="@drawable/bg_card" android:padding="14dp"
+                        android:textColor="@color/text_light" android:alpha="0.65"
+                        android:layout_marginBottom="16dp"/>
+
+                    <!-- Location -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:background="@drawable/bg_loc_box" android:padding="14dp"
+                        android:orientation="horizontal" android:gravity="center_vertical"
+                        android:layout_marginBottom="20dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="📍" android:textSize="22sp" android:layout_marginEnd="12dp"/>
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:id="@+id/tv_loc_status_co"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Location not captured" android:textColor="@color/muted_light" android:textSize="12sp"/>
+                            <TextView android:id="@+id/tv_loc_coords_co"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="—" android:textColor="@color/red" android:textSize="11sp"/>
+                        </LinearLayout>
+                        <Button android:id="@+id/btn_get_loc_co"
+                            android:layout_width="wrap_content" android:layout_height="32dp"
+                            android:text="Get Location" android:textSize="12sp" android:textStyle="bold"
+                            android:textColor="@color/red" android:backgroundTint="#1AE63946"
+                            android:paddingStart="12dp" android:paddingEnd="12dp"/>
+                    </LinearLayout>
+
+                    <Button android:id="@+id/btn_checkout"
+                        android:layout_width="match_parent" android:layout_height="56dp"
+                        android:text="🚪 Check Out Now" android:backgroundTint="@color/orange"
+                        android:textColor="@color/white" android:textSize="17sp" android:textStyle="bold"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- LOADER -->
+    <FrameLayout android:id="@+id/loader"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="#B3F4F6FB" android:visibility="gone"
+        android:clickable="true" android:focusable="true">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center" android:orientation="vertical" android:gravity="center">
+            <ProgressBar android:layout_width="44dp" android:layout_height="44dp"
+                android:indeterminateTint="@color/red"/>
+            <TextView android:id="@+id/tv_loader_msg"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Loading..." android:textColor="@color/muted_light"
+                android:textSize="14sp" android:layout_marginTop="14dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

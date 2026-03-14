@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="departments">
+        <item>Select department</item>
+        <item>Science</item>
+        <item>Commerce</item>
+        <item>Arts</item>
+        <item>Computer Science</item>
+        <item>Engineering</item>
+        <item>Medicine</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="filter_types">
+        <item>All Types</item>
+        <item>Present Only</item>
+        <item>Absent Only</item>
+    </string-array>
+
+    <string-array name="filter_types_teacher">
+        <item>All Types</item>
+        <item>Present Only</item>
+        <item>Absent Only</item>
+        <item>Checked Out</item>
+    </string-array>
+</resources>

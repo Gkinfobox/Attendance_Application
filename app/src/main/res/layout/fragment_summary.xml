@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="My Summary" android:textColor="@color/text_light"
+                android:textSize="22sp" android:textStyle="bold" android:layout_marginBottom="20dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Stats -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="20dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:background="@drawable/bg_card"
+                    android:orientation="vertical" android:gravity="center" android:padding="14dp"
+                    android:layout_marginEnd="5dp">
+                    <TextView android:id="@+id/tv_sum_in"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="0" android:textColor="@color/success"
+                        android:textSize="28sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="PRESENT" android:textColor="@color/muted_light"
+                        android:textSize="10sp" android:textAllCaps="true" android:layout_marginTop="2dp"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:background="@drawable/bg_card"
+                    android:orientation="vertical" android:gravity="center" android:padding="14dp"
+                    android:layout_marginEnd="5dp" android:layout_marginStart="5dp">
+                    <TextView android:id="@+id/tv_sum_absent"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="0" android:textColor="@color/muted_light"
+                        android:textSize="28sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="ABSENT" android:textColor="@color/muted_light"
+                        android:textSize="10sp" android:textAllCaps="true" android:layout_marginTop="2dp"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:background="@drawable/bg_card"
+                    android:orientation="vertical" android:gravity="center" android:padding="14dp"
+                    android:layout_marginStart="5dp">
+                    <TextView android:id="@+id/tv_sum_out"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="0" android:textColor="@color/red"
+                        android:textSize="28sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="CHECKED OUT" android:textColor="@color/muted_light"
+                        android:textSize="10sp" android:textAllCaps="true" android:layout_marginTop="2dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Filter chips -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="16dp">
+                <Button android:id="@+id/btn_filter_all"
+                    android:layout_width="wrap_content" android:layout_height="34dp"
+                    android:text="All" android:textSize="12sp" android:textStyle="bold"
+                    android:background="@drawable/bg_btn_red" android:textColor="@color/white"
+                    android:layout_marginEnd="8dp" android:paddingStart="14dp" android:paddingEnd="14dp"/>
+                <Button android:id="@+id/btn_filter_in"
+                    android:layout_width="wrap_content" android:layout_height="34dp"
+                    android:text="Present" android:textSize="12sp" android:textStyle="bold"
+                    android:background="@drawable/bg_card" android:textColor="@color/muted_light"
+                    android:layout_marginEnd="8dp" android:paddingStart="14dp" android:paddingEnd="14dp"/>
+                <Button android:id="@+id/btn_filter_out"
+                    android:layout_width="wrap_content" android:layout_height="34dp"
+                    android:text="Absent" android:textSize="12sp" android:textStyle="bold"
+                    android:background="@drawable/bg_card" android:textColor="@color/muted_light"
+                    android:paddingStart="14dp" android:paddingEnd="14dp"/>
+            </LinearLayout>
+
+            <!-- Log list -->
+            <LinearLayout android:id="@+id/sum_log_list"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

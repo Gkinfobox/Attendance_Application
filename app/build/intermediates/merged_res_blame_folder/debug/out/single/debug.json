@@ -1,0 +1,150 @@
+[
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/drawable_bg_splash_ring.xml.flat",
+        "source": "com.student.attendance.app-main-36:/drawable/bg_splash_ring.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/drawable_bg_card.xml.flat",
+        "source": "com.student.attendance.app-main-36:/drawable/bg_card.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/layout_fragment_teacher.xml.flat",
+        "source": "com.student.attendance.app-main-36:/layout/fragment_teacher.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/layout_dialog_add_student.xml.flat",
+        "source": "com.student.attendance.app-main-36:/layout/dialog_add_student.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.student.attendance.app-main-36:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/drawable_bg_avatar.xml.flat",
+        "source": "com.student.attendance.app-main-36:/drawable/bg_avatar.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.student.attendance.app-main-36:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/layout_item_employee.xml.flat",
+        "source": "com.student.attendance.app-main-36:/layout/item_employee.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/drawable_bg_bottom_nav.xml.flat",
+        "source": "com.student.attendance.app-main-36:/drawable/bg_bottom_nav.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/layout_fragment_home.xml.flat",
+        "source": "com.student.attendance.app-main-36:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.student.attendance.app-main-36:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/layout_fragment_summary.xml.flat",
+        "source": "com.student.attendance.app-main-36:/layout/fragment_summary.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.student.attendance.app-main-36:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.student.attendance.app-main-36:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/drawable_bg_status_bar_in.xml.flat",
+        "source": "com.student.attendance.app-main-36:/drawable/bg_status_bar_in.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/layout_activity_main.xml.flat",
+        "source": "com.student.attendance.app-main-36:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/layout_item_log.xml.flat",
+        "source": "com.student.attendance.app-main-36:/layout/item_log.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/drawable_bg_loc_box.xml.flat",
+        "source": "com.student.attendance.app-main-36:/drawable/bg_loc_box.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.student.attendance.app-main-36:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/drawable_bg_badge_in.xml.flat",
+        "source": "com.student.attendance.app-main-36:/drawable/bg_badge_in.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/drawable_bg_btn_red.xml.flat",
+        "source": "com.student.attendance.app-main-36:/drawable/bg_btn_red.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.student.attendance.app-main-36:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.student.attendance.app-main-36:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/layout_activity_auth.xml.flat",
+        "source": "com.student.attendance.app-main-36:/layout/activity_auth.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/layout_activity_splash.xml.flat",
+        "source": "com.student.attendance.app-main-36:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.student.attendance.app-main-36:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.student.attendance.app-main-36:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.student.attendance.app-main-36:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.student.attendance.app-main-36:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/drawable_bg_badge_out.xml.flat",
+        "source": "com.student.attendance.app-main-36:/drawable/bg_badge_out.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.student.attendance.app-main-36:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.student.attendance.app-main-36:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.student.attendance.app-main-36:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/layout_fragment_attendance.xml.flat",
+        "source": "com.student.attendance.app-main-36:/layout/fragment_attendance.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.student.attendance.app-main-36:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.student.attendance.app-main-36:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.student.attendance.app-merged_res-34:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.student.attendance.app-main-36:/mipmap-xhdpi/ic_launcher.webp"
+    }
+]
